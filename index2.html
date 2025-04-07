@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitor Yeso Fidelis Freitas | Engenheiro de Machine Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 18px;
+            color: #2c3e50;
+            text-transform: uppercase;
+            margin: 25px 0 15px 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 16px;
+            margin: 0;
+            color: #2c3e50;
+        }
+        h4 {
+            font-size: 15px;
+            margin: 5px 0;
+            font-weight: normal;
+            color: #3498db;
+        }
+        .contact-line {
+            margin: 5px 0 15px 0;
+            font-size: 14px;
+        }
+        .summary {
+            margin-bottom: 25px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .experience-header, .education-header, .publication-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+        .experience-item, .education-item, .publication-item {
+            margin-bottom: 20px;
+        }
+        .date {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+        ul {
+            margin: 8px 0 0 0;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            font-size: 14px;
+        }
+        .skills-container p {
+            margin: 5px 0;
+        }
+        .skills-container strong {
+            color: #2c3e50;
+        }
+        .two-column-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .publication-item p {
+            margin: 2px 0;
+            font-size: 14px;
+        }
+        .details {
+            font-size: 12px;
+            color: #666;
+        }
+        .language-toggle {
+            display: none;
+        }
+        .content-en {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>VITOR YESO FIDELIS FREITAS</h1>
+            <p class="contact-line">
+                Natal, Rio Grande do Norte • (84) 99417-9260 • vitoryeso@gmail.com • linkedin.com/in/vitoryeso
+            </p>
+            
+            <p class="summary">Engenheiro de Computação com especialização em Inteligência Artificial e Gerenciamento de Infraestrutura. Experiência na liderança de infraestrutura de laboratório de pesquisa com 10 GPUs, desenvolvimento de projetos como Agentes LLM, RAG e Modelos de Difusão para geração de imagens 3D e nuvens de pontos. Proficiente em sistemas distribuídos, computação paralela e MLOps, com experiência em automação (RPA), visão computacional e soluções forenses.</p>
+        </header>
+
+        <section>
+            <h2>EXPERIÊNCIA PROFISSIONAL</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="left">
+                        <h3>UFRN</h3>
+                        <h4>Engenheiro de IA Generativa</h4>
+                    </div>
+                    <div class="right">
+                        <p class="date">01/2024 - Atual</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Desenvolvimento de sistema RAG para processamento de +10.000 tickets com ChromaDB e QDrant, otimizando precisão em consultas semânticas.</li>
+                    <li>Implementação de chatbot em ambiente de produção utilizando Ollama, Docker e APIs de IA (OpenAI, Claude, DeepSeek), com aplicação de MLOps para redução de 30% no tempo de resposta.</li>
+                    <li>Desenvolvimento de pipelines ETL para processamento de imagens de próteses dentárias, com otimização de dados para modelos de difusão generativa e melhoria na qualidade de imagens 3D.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="left">
+                        <h3>UFRN</h3>
+                        <h4>Engenheiro de Visão Computacional</h4>
+                    </div>
+                    <div class="right">
+                        <p class="date">01/2023 - 12/2023</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Desenvolvimento e treinamento de detectores de falhas em tecidos utilizando imagens de alta resolução, alcançando alta precisão em ambientes industriais.</li>
+                    <li>Implementação de sistema baseado em RabbitMQ para otimização da comunicação entre dispositivos e servidores de IA, com foco em escalabilidade.</li>
+                    <li>Colaboração no desenvolvimento de soluções de processamento de imagens em tempo real, integrando tecnologias de visão computacional com infraestrutura escalável.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="left">
+                        <h3>TJRN</h3>
+                        <h4>Analista de Inteligência Artificial</h4>
+                    </div>
+                    <div class="right">
+                        <p class="date">09/2022 - 10/2023</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Automação de processos jurídicos no sistema PJe utilizando Selenium, com redução significativa no tempo de execução de tarefas manuais.</li>
+                    <li>Implementação de modelos de previsão de séries temporais com tecnologias Darts e Temporal Fusion Transformers para análise de dados jurídicos.</li>
+                    <li>Desenvolvimento de classificadores de texto utilizando PyTorch para otimização da categorização de documentos jurídicos.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="left">
+                        <h3>MPRN</h3>
+                        <h4>Engenheiro de Machine Learning</h4>
+                    </div>
+                    <div class="right">
+                        <p class="date">01/2021 - 08/2022</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Projeto e desenvolvimento de 8 detectores de materiais ilícitos com tecnologias de visão computacional, contribuindo para o reforço da segurança em investigações digitais.</li>
+                    <li>Gerenciamento de dados utilizando HDFS, Kafka e S3, com implementação de Grafana e Prometheus para monitoramento em tempo real.</li>
+                    <li>Desenvolvimento de pipelines de web scraping com Scrapy e Selenium para coleta e processamento de dados para modelos de IA.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="left">
+                        <h3>CPQD</h3>
+                        <h4>Estagiário em Engenharia de Machine Learning</h4>
+                    </div>
+                    <div class="right">
+                        <p class="date">03/2020 - 03/2021</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Desenvolvimento de sistema de NLP para Question Answering e classificação de texto médico.</li>
+                    <li>Implementação de modelos de classificação de imagens de animais utilizando técnicas de visão computacional.</li>
+                    <li>Utilização de AWS para otimização de soluções de IA em ambientes remotos.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="left">
+                        <h3>SmartMetropolis</h3>
+                        <h4>Bolsista de Engenharia de Machine Learning</h4>
+                    </div>
+                    <div class="right">
+                        <p class="date">01/2020 - 12/2020</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Desenvolvimento de sistemas de detecção de placas e reconhecimento facial utilizando TensorFlow.</li>
+                    <li>Criação de aplicações web com Django e React para integração de modelos de IA.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="two-column-section">
+            <div class="column">
+                <section>
+                    <h2>FORMAÇÃO ACADÊMICA</h2>
+                    
+                    <div class="education-item">
+                        <div class="experience-header">
+                            <div class="left">
+                                <h3>Universidade Federal do Rio Grande do Norte (UFRN)</h3>
+                                <h4>Engenharia de Computação</h4>
+                            </div>
+                            <div class="right">
+                                <p class="date">2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="experience-header">
+                            <div class="left">
+                                <h3>Universidade Federal do Rio Grande do Norte (UFRN)</h3>
+                                <h4>Bacharelado em Ciências e Tecnologia</h4>
+                            </div>
+                            <div class="right">
+                                <p class="date">2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="column">
+                <section>
+                    <h2>PUBLICAÇÕES & PESQUISA</h2>
+                    
+                    <div class="publication-item">
+                        <div class="publication-header">
+                            <div class="left">
+                                <h3>SEMISH - SBC</h3>
+                            </div>
+                            <div class="right">
+                                <p class="date">2020</p>
+                            </div>
+                        </div>
+                        <p>"Vehicle Speed Detection and Safety Distance Estimation Using Aerial Images"</p>
+                        <p class="details">sol.sbc.org.br/index.php/semish/article/view/11334</p>
+                    </div>
+                    
+                    <div class="publication-item">
+                        <div class="publication-header">
+                            <div class="left">
+                                <h3>Software - GitHub</h3>
+                            </div>
+                            <div class="right">
+                                <p class="date">2019</p>
+                            </div>
+                        </div>
+                        <p>"ECT-proj-cnn-vant"</p>
+                        <p class="details">github.com/vitoryeso/ECT-proj-cnn-vant</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section>
+            <h2>COMPETÊNCIAS TÉCNICAS</h2>
+            
+            <div class="skills-container">
+                <p><strong>Linguagens & Frameworks:</strong> Python, C++, PyTorch, TensorFlow, Django, React</p>
+                
+                <p><strong>Tecnologias & Ferramentas:</strong> Docker, Google Cloud, AWS (EC2, S3), Selenium, Scrapy, ChromaDB, QDrant, RabbitMQ, Kafka, HDFS, MLflow, CI/CD, Ollama, Grafana, Prometheus, Kerberos, ETL, FPGA</p>
+                
+                <p><strong>Áreas de Especialização:</strong> RAG, LLMs, Visão Computacional, NLP, MLOps, Sistemas Distribuídos, Computação Paralela, Automação (RPA), Difusão Generativa</p>
+                
+                <p><strong>APIs & Bibliotecas:</strong> OpenAI, Claude, DeepSeek, Hugging Face, LangChain, Darts, Transformers</p>
+                
+                <p><strong>Idiomas:</strong> Português (Nativo), Inglês (Avançado)</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

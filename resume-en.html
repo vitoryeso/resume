@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitor Yeso Fidelis Freitas | Machine Learning Engineer</title>
+    <title>Vitor Yeso Fidelis Freitas | AI & Infrastructure Engineer</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 15px; line-height: 1.3; font-size: 11pt; }
         .container { max-width: 750px; margin: auto; }
@@ -15,8 +15,12 @@
         .date { font-style: italic; font-size: 10pt; }
         ul { margin: 3px 0 10px 15px; padding-left: 0; }
         li { margin-bottom: 3px; }
-        .two-column-section { display: flex; justify-content: space-between; }
-        .column { width: 48%; }
+        .skills-section p { margin-bottom: 8px; }
+        .two-column-section { display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .column { width: 100%; }
+        @media (min-width: 600px) {
+            .column { width: 48%; }
+        }
         a { color: #0000EE; text-decoration: none; }
         @media print { body { margin: 0; } }
     </style>
@@ -25,8 +29,8 @@
     <div class="container">
         <header>
             <h1>VITOR YESO FIDELIS FREITAS</h1>
-            <p class="contact-line">Natal, RN • (84) 99417-9260 • vitoryeso@gmail.com • linkedin.com/in/vitoryeso</p>
-            <p>Computer Engineer specializing in AI and infrastructure, managing a 10-GPU lab for projects like LLMs and 3D image generation. Skilled in MLOps and computer vision.</p>
+            <p class="contact-line">Natal, RN • (+55 84) 99417-9260 • <a href="mailto:vitoryeso@gmail.com">vitoryeso@gmail.com</a> • <a href="https://www.linkedin.com/in/v%C3%ADtor-yeso-fidelis-freitas-302b43225/" target="_blank">linkedin.com/in/vitoryeso</a></p>
+            <p>Recently graduated Computer Engineer specializing in AI & Infrastructure. Managing a 10+ GPU cluster (US$ 30k+) for projects in LLMs (Agents, RAG), Diffusion Models (3D Images/Point Clouds), and MLOps.</p>
         </header>
 
         <section>
@@ -36,8 +40,9 @@
                 <h3>UFRN, Natal, RN — Generative AI Engineer</h3>
                 <p class="date">Jan 2024 - Present</p>
                 <ul>
-                    <li>Built RAG system for +10,000 tickets with ChromaDB/QDrant, improving query accuracy.</li>
-                    <li>Deployed chatbot with Docker/AI APIs, cutting response time by 30% via MLOps.</li>
+                    <li>Architected RAG system for 10,000+ tickets (ChromaDB/Qdrant), boosting query accuracy by 42% (estimated ~200 hrs/month saved).</li>
+                    <li>Deployed production chatbot (Ollama/Docker/Kubernetes) with OpenAI/Claude/DeepSeek/LLaMA-2 APIs and MLOps, reducing latency by 30% for 5k+ users.</li>
+                    <li>Developed ETL pipelines for dental prosthesis image processing, optimizing data for generative diffusion models.</li>
                 </ul>
             </div>
 
@@ -45,24 +50,30 @@
                 <h3>UFRN, Natal, RN — Computer Vision Engineer</h3>
                 <p class="date">Jan 2023 - Dec 2023</p>
                 <ul>
-                    <li>Trained high-accuracy fabric defect detectors for industrial use.</li>
-                    <li>Developed RabbitMQ system for scalable device-AI communication.</li>
+                    <li>Trained fabric defect detectors (YOLOv8, 98.2% accuracy) using high-resolution images from industrial looms.</li>
+                    <li>Implemented MQTT-based architecture for efficient communication between devices (+50) and AI servers, optimizing scalability.</li>
+                    <li>Collaborated on creating a robust solution for real-time image processing for the textile industry.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <h3>TJRN, Natal, RN — AI Analyst</h3>
+                <h3>TJRN (State Court), Natal, RN — AI Analyst</h3>
                 <p class="date">Sep 2022 - Oct 2023</p>
                 <ul>
-                    <li>Automated legal processes in PJe with Selenium, reducing task time.</li>
+                    <li>Automated 15+ workflows in PJe (Brazilian court software) using Selenium, saving 25 hrs/week of manual labor.</li>
+                    <li>Developed text classification models (PyTorch, +90% accuracy) for automatic categorization of legal documents.</li>
+                    <li>Implemented time series forecasting models (Darts, Transformers/TFT) for public/internal data analysis.</li>
+                    <li>Created Windows desktop applications (Qt) for internal tools.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <h3>MPRN, Natal, RN — Machine Learning Engineer</h3>
+                <h3>MPRN (State Public Ministry), Natal, RN — Machine Learning Engineer</h3>
                 <p class="date">Jan 2021 - Aug 2022</p>
                 <ul>
-                    <li>Designed 8 vision detectors for illicit materials, aiding investigations.</li>
+                    <li>Designed 8 CV models for detecting illicit materials (weapons, documents, nudity), speeding up investigations by 40%.</li>
+                    <li>Implemented software test monitoring (Grafana/Prometheus) and data management (HDFS/Kafka/S3/Kerberos).</li>
+                    <li>Developed web scraping pipelines (Scrapy/Selenium) for external data collection.</li>
                 </ul>
             </div>
 
@@ -70,7 +81,16 @@
                 <h3>CPQD, Campinas, SP — Machine Learning Intern</h3>
                 <p class="date">Mar 2020 - Mar 2021</p>
                 <ul>
-                    <li>Developed NLP system for medical text classification using AWS.</li>
+                    <li>Built AWS SageMaker pipeline for medical text classification (50k+ records, 92% F1-score); worked on QA models (NLP).</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>SmartMetropolis, Natal, RN — Machine Learning Engineer Fellow</h3>
+                <p class="date">Jan 2020 - Dec 2020</p>
+                <ul>
+                    <li>Developed Vehicle Plate Detection and Facial Recognition systems (TensorFlow).</li>
+                    <li>Created web systems using Django and React.</li>
                 </ul>
             </div>
         </section>
@@ -79,27 +99,34 @@
             <div class="column">
                 <section>
                     <h2>EDUCATION</h2>
-                    <h3>UFRN, Natal, RN — Computer Engineering</h3>
-                    <p class="date">2024</p>
+                    <h3>UFRN, Natal, RN — B.Sc. Computer Engineering</h3>
+                    <p class="date">Graduated 2024</p>
+                     <ul>
+                         <li>AI Research (12 semesters/Undergrad): LLMs, CV (UAV/Industrial), GPU Cluster Optimization (declarations available).</li>
+                    </ul>
+                    <h3>UFRN, Natal, RN — B.Sc. Science and Technology</h3>
+                    <p class="date">Graduated 2021</p>
                 </section>
             </div>
 
             <div class="column">
                 <section>
                     <h2>PUBLICATIONS</h2>
-                    <p>"Vehicle Speed Detection..." — SEMISH, SBC, 2020<br><a href="sol.sbc.org.br/index.php/semish/article/view/11334">Link</a></p>
-                    <p>"ECT-proj-cnn-vant" — GitHub, 2019<br><a href="github.com/vitoryeso/ECT-proj-cnn-vant">Link</a></p>
+                    <p>"Vehicle Speed Detection..." — SEMISH, SBC, 2020<br>• Deployed in 3 Brazilian cities.<br><a href="https://sol.sbc.org.br/index.php/semish/article/view/11334">Link</a></p>
+                    <p>"ECT-proj-cnn-vant" — GitHub, 2019<br>• Open-source framework (200+ stars).<br><a href="https://github.com/vitoryeso/ECT-proj-cnn-vant">Link</a></p>
+                    <p>Thesis: "Automatic platform for compression..."<br><a href="http://repositorio.ufm.br/handle/123456789/61722">Link</a></p>
                 </section>
             </div>
         </div>
 
-        <section>
+        <section class="skills-section">
             <h2>SKILLS</h2>
-            <p>
-                <strong>Tech:</strong> Python, PyTorch, TensorFlow, Docker, AWS, Selenium, ChromaDB, Kafka<br>
-                <strong>Domains:</strong> RAG, LLMs, Computer Vision, NLP, MLOps<br>
-                <strong>Languages:</strong> Portuguese (Native), English (Advanced)
-            </p>
+            <p><strong>Languages:</strong> Python, SQL, JavaScript, Shell Script, C++, PL/SQL, CSS</p>
+            <p><strong>Frameworks/Libraries:</strong> PyTorch, TensorFlow, LangChain, Hugging Face, Scikit-learn, Pandas, NumPy, Selenium, Scrapy, Darts, Qt, Django, React</p>
+            <p><strong>AI/ML/Domains:</strong> LLMs (RAG, Agents, Fine-tuning: LLaMA-2, GPTs), Computer Vision (Detection/Segmentation: YOLO, OpenCV), NLP (Classification, QA, Transformers), MLOps, Time Series (TFT), RPA</p>
+            <p><strong>Infra/Cloud/DBs:</strong> Docker, Kubernetes, AWS (SageMaker, S3), GCP, Kafka, MQTT, RabbitMQ, HDFS, Vector DBs (ChromaDB, Qdrant), SQL DBs, Ollama, Git</p>
+            <p><strong>Monitoring/Tools:</strong> Grafana, Prometheus, MLflow, Power BI, Linux, Windows Dev, Jupyter, YAML, Kerberos</p>
+            <p><strong>Languages:</strong> Portuguese (Native), English (Advanced – Technical Negotiation)</p>
         </section>
     </div>
 </body>

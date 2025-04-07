@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitor Yeso Fidelis Freitas | Engenheiro de Machine Learning</title>
+    <title>Vitor Yeso Fidelis Freitas | Engenheiro de IA e Infraestrutura</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 15px; line-height: 1.3; font-size: 11pt; }
         .container { max-width: 750px; margin: auto; }
@@ -15,8 +15,12 @@
         .date { font-style: italic; font-size: 10pt; }
         ul { margin: 3px 0 10px 15px; padding-left: 0; }
         li { margin-bottom: 3px; }
-        .two-column-section { display: flex; justify-content: space-between; }
-        .column { width: 48%; }
+        .skills-section p { margin-bottom: 8px; }
+        .two-column-section { display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .column { width: 100%; }
+        @media (min-width: 600px) {
+             .column { width: 48%; }
+        }
         a { color: #0000EE; text-decoration: none; }
         @media print { body { margin: 0; } }
     </style>
@@ -25,8 +29,8 @@
     <div class="container">
         <header>
             <h1>VITOR YESO FIDELIS FREITAS</h1>
-            <p class="contact-line">Natal, RN • (84) 99417-9260 • vitoryeso@gmail.com • linkedin.com/in/vitoryeso</p>
-            <p>Engenheiro de Computação especializado em IA e infraestrutura, liderando um laboratório com 10 GPUs para projetos como LLMs e geração de imagens 3D. Experiência em MLOps e visão computacional.</p>
+            <p class="contact-line">Natal, RN • (84) 99417-9260 • <a href="mailto:vitoryeso@gmail.com">vitoryeso@gmail.com</a> • <a href="https://www.linkedin.com/in/v%C3%ADtor-yeso-fidelis-freitas-302b43225/" target="_blank">linkedin.com/in/vitoryeso</a></p>
+            <p>Engenheiro de Computação recém-formado, especializado em IA e Infraestrutura. Gerenciando cluster de 10+ GPUs (US$ 30k+) para projetos em LLMs (Agentes, RAG), Modelos de Difusão (Imagens 3D/Nuvens de Pontos) e MLOps.</p>
         </header>
 
         <section>
@@ -36,8 +40,9 @@
                 <h3>UFRN, Natal, RN — Engenheiro de IA Generativa</h3>
                 <p class="date">Jan 2024 - Atual</p>
                 <ul>
-                    <li>Construí sistema RAG para +10.000 tickets com ChromaDB/QDrant, melhorando precisão de consultas.</li>
-                    <li>Implementei chatbot com Docker/APIs de IA, reduzindo resposta em 30% com MLOps.</li>
+                    <li>Arquitetei sistema RAG para +10.000 tickets (ChromaDB/Qdrant), aumentando a precisão da consulta em 42% (economia estimada ~200h/mês).</li>
+                    <li>Implementei chatbot em produção (Ollama/Docker/Kubernetes) com APIs OpenAI/Claude/DeepSeek/LLaMA-2 e MLOps, reduzindo latência em 30% para +5k usuários.</li>
+                    <li>Desenvolvi pipelines ETL para processamento de imagens de próteses dentárias, otimizando dados para modelos de difusão generativa.</li>
                 </ul>
             </div>
 
@@ -45,8 +50,9 @@
                 <h3>UFRN, Natal, RN — Engenheiro de Visão Computacional</h3>
                 <p class="date">Jan 2023 - Dez 2023</p>
                 <ul>
-                    <li>Treinei detectores de falhas em tecidos com alta precisão para uso industrial.</li>
-                    <li>Desenvolvi sistema RabbitMQ para comunicação escalável entre dispositivos e IA.</li>
+                    <li>Treinei detectores de defeitos em tecidos (YOLOv8, 98.2% de precisão) usando imagens de alta resolução de teares industriais.</li>
+                    <li>Implementei arquitetura baseada em MQTT para comunicação eficiente entre dispositivos (+50) e servidores de IA, otimizando escalabilidade.</li>
+                    <li>Colaborei na criação de solução robusta para processamento de imagens em tempo real para a indústria têxtil.</li>
                 </ul>
             </div>
 
@@ -54,7 +60,10 @@
                 <h3>TJRN, Natal, RN — Analista de Inteligência Artificial</h3>
                 <p class="date">Set 2022 - Out 2023</p>
                 <ul>
-                    <li>Automatizei processos no PJe com Selenium, reduzindo tempo de tarefas.</li>
+                    <li>Automatizei +15 fluxos de trabalho no PJe (software de tribunal brasileiro) com Selenium, economizando 25h/semana de trabalho manual.</li>
+                    <li>Desenvolvi modelos de classificação de texto (PyTorch, +90% precisão) para categorização automática de documentos jurídicos.</li>
+                    <li>Implementei modelos de previsão de séries temporais (Darts, Transformers/TFT) para análise de dados públicos/internos.</li>
+                    <li>Criei aplicativos desktop para Windows (Qt) para ferramentas internas.</li>
                 </ul>
             </div>
 
@@ -62,15 +71,26 @@
                 <h3>MPRN, Natal, RN — Engenheiro de Machine Learning</h3>
                 <p class="date">Jan 2021 - Ago 2022</p>
                 <ul>
-                    <li>Projetei 8 detectores de visão para materiais ilícitos, apoiando investigações.</li>
+                    <li>Projetei 8 modelos de CV para detecção de materiais ilícitos (armas, documentos, nudez), acelerando investigações em 40%.</li>
+                    <li>Implementei monitoramento de testes de software (Grafana/Prometheus) e gerenciamento de dados (HDFS/Kafka/S3/Kerberos).</li>
+                    <li>Desenvolvi pipelines de web scraping (Scrapy/Selenium) para coleta de dados externos.</li>
+                </ul>
+            </div>
+
+             <div class="experience-item">
+                <h3>CPQD, Campinas, SP — Estagiário em Engenharia de Machine Learning</h3>
+                <p class="date">Mar 2020 - Mar 2021</p>
+                <ul>
+                    <li>Construí pipeline AWS SageMaker para classificação de texto médico (+50k registros, 92% F1-score); trabalhei com modelos de QA (NLP).</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <h3>CPQD, Campinas, SP — Estagiário em Engenharia de Machine Learning</h3>
-                <p class="date">Mar 2020 - Mar 2021</p>
+                <h3>SmartMetropolis, Natal, RN — Bolsista de Engenharia de Machine Learning</h3>
+                <p class="date">Jan 2020 - Dez 2020</p>
                 <ul>
-                    <li>Desenvolvi sistema de NLP para classificação de texto médico com AWS.</li>
+                    <li>Desenvolvi sistemas de Detecção de Placas Veiculares e Reconhecimento Facial (TensorFlow).</li>
+                    <li>Criei sistemas web utilizando Django e React.</li>
                 </ul>
             </div>
         </section>
@@ -80,26 +100,33 @@
                 <section>
                     <h2>FORMAÇÃO ACADÊMICA</h2>
                     <h3>UFRN, Natal, RN — Engenharia de Computação</h3>
-                    <p class="date">2024</p>
+                    <p class="date">Concluído em 2024</p>
+                    <ul>
+                         <li>Pesquisa em IA (12 semestres/IC): LLMs, CV (VANTs/Industrial), Otimização de Cluster GPU (declarações disponíveis).</li>
+                    </ul>
+                     <h3>UFRN, Natal, RN — Bacharelado em Ciências e Tecnologia</h3>
+                    <p class="date">Concluído em 2021</p>
                 </section>
             </div>
 
             <div class="column">
                 <section>
                     <h2>PUBLICAÇÕES</h2>
-                    <p>"Vehicle Speed Detection..." — SEMISH, SBC, 2020<br><a href="sol.sbc.org.br/index.php/semish/article/view/11334">Link</a></p>
-                    <p>"ECT-proj-cnn-vant" — GitHub, 2019<br><a href="github.com/vitoryeso/ECT-proj-cnn-vant">Link</a></p>
+                    <p>"Vehicle Speed Detection..." — SEMISH, SBC, 2020<br>• Implementado em 3 cidades brasileiras.<br><a href="https://sol.sbc.org.br/index.php/semish/article/view/11334">Link</a></p>
+                    <p>"ECT-proj-cnn-vant" — GitHub, 2019<br>• Framework open-source (+200 estrelas).<br><a href="https://github.com/vitoryeso/ECT-proj-cnn-vant">Link</a></p>
+                     <p>TCC: "Plataforma automática para compressão..."<br><a href="http://repositorio.ufm.br/handle/123456789/61722">Link</a></p>
                 </section>
             </div>
         </div>
 
-        <section>
-            <h2>HABILIDADES</h2>
-            <p>
-                <strong>Tecnologias:</strong> Python, PyTorch, TensorFlow, Docker, AWS, Selenium, ChromaDB, Kafka<br>
-                <strong>Domínios:</strong> RAG, LLMs, Visão Computacional, NLP, MLOps<br>
-                <strong>Idiomas:</strong> Português (Nativo), Inglês (Avançado)
-            </p>
+        <section class="skills-section">
+             <h2>HABILIDADES</h2>
+            <p><strong>Linguagens:</strong> Python, SQL, JavaScript, Shell Script, C++, PL/SQL, CSS</p>
+            <p><strong>Frameworks/Bibliotecas:</strong> PyTorch, TensorFlow, LangChain, Hugging Face, Scikit-learn, Pandas, NumPy, Selenium, Scrapy, Darts, Qt, Django, React</p>
+            <p><strong>IA/ML/Domínios:</strong> LLMs (RAG, Agentes, Fine-tuning: LLaMA-2, GPTs), Visão Computacional (Detecção/Segmentação: YOLO, OpenCV), NLP (Classificação, QA, Transformers), MLOps, Séries Temporais (TFT), RPA</p>
+            <p><strong>Infra/Cloud/DBs:</strong> Docker, Kubernetes, AWS (SageMaker, S3), GCP, Kafka, MQTT, RabbitMQ, HDFS, Vector DBs (ChromaDB, Qdrant), SQL DBs, Ollama, Git</p>
+            <p><strong>Monitoramento/Ferramentas:</strong> Grafana, Prometheus, MLflow, Power BI, Linux, Windows Dev, Jupyter, YAML, Kerberos</p>
+            <p><strong>Idiomas:</strong> Português (Nativo), Inglês (Avançado – Negociação Técnica)</p>
         </section>
     </div>
 </body>

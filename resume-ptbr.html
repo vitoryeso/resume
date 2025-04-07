@@ -3,73 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - Vitor Yeso Fidelis Freitas</title>
+    <title>Currículo - Vitor Yeso Fidelis Freitas | IA & Infraestrutura</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1, h2 { color: #2c3e50; }
-        h3 { color: #34495e; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 10px; }
+        body { font-family: Arial, sans-serif; margin: 15px; line-height: 1.3; font-size: 11pt; }
+        .container { max-width: 750px; margin: auto; }
+        h1 { font-size: 22px; color: #2c3e50; margin-bottom: 5px; text-align: center; }
+        h2 { color: #2c3e50; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 20px; font-size: 16px; }
+        h3 { color: #34495e; margin-top: 15px; font-size: 14px; }
+        ul { list-style-type: disc; padding-left: 20px; margin: 5px 0 10px; }
+        li { margin-bottom: 5px; }
+        p { margin: 3px 0; }
+        .contact-info { margin-bottom: 10px; text-align: center; font-size: 10pt; }
+        .headline { text-align: center; margin-bottom: 15px; }
+        .section-title { font-weight: bold; color: #2c3e50; display: inline-block; width: 120px; /* Adjust width as needed */ }
+        .job-title { font-weight: bold; }
+        .date { font-style: italic; color: #7f8c8d; font-size: 10pt; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .skills ul { list-style-type: none; padding: 0; }
+        .skills li { margin-bottom: 6px; }
+         .two-column-section { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 15px; }
+        .column { width: 100%; margin-bottom: 10px; } 
+        @media (min-width: 600px) {
+            .column { width: 48%; margin-bottom: 0; }
+            .skills ul { column-count: 2; }
+        }
     </style>
 </head>
 <body>
+<div class="container">
     <h1>Vitor Yeso Fidelis Freitas</h1>
-    <p><strong>Engenheiro de Machine Learning</strong></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/vitoryeso">vitoryeso</a> | Email: vitoryeso@gmail.com | Telefone: (84) 99417-9260</p>
-    
-    <h2>Sobre Mim</h2>
-    <p>Engenheiro de Machine Learning com formação em Engenharia de Computação e experiência na implementação de sistemas de IA. Expertise em RAG, LLMs, Visão Computacional e MLOps. Foco atual no desenvolvimento de sistemas de suporte empresarial com RAG e gerenciamento de infraestrutura de IA.</p>
-    
+    <p class="contact-info">
+        Natal, RN • (84) 99417-9260 • <a href="mailto:vitoryeso@gmail.com">vitoryeso@gmail.com</a> • <a href="https://www.linkedin.com/in/v%C3%ADtor-yeso-fidelis-freitas-302b43225/" target="_blank">linkedin.com/in/vitoryeso</a>
+    </p>
+    <p class="headline">Engenheiro de Computação recém-formado, especializado em IA e Infraestrutura. Gerenciando cluster de 10+ GPUs (US$ 30k+) para projetos em LLMs (Agentes, RAG), Modelos de Difusão (Imagens 3D/Nuvens de Pontos) e MLOps.</p>
+
     <h2>Experiência Profissional</h2>
-    
-    <h3>Pesquisador de IA Generativa - LANCE/InovAI Lab</h3>
-    <p><em>Jan 2024 - Atual</em></p>
+
+    <h3><span class="job-title">Engenheiro de IA Generativa</span> - UFRN (LANCE/InovAI Lab)</h3>
+    <p class="date">Jan 2024 - Atual</p>
     <ul>
-        <li>Arquitetei sistema RAG processando +100.000 tickets com ChromaDB e QDrant para armazenamento e recuperação eficiente de vetores.</li>
-        <li>Implementei chatbot em produção usando Ollama, Docker e APIs modernas de IA (OpenAI, Claude, DeepSeek) com práticas MLOps.</li>
-        <li>Desenvolvi pipelines ETL para processamento de imagens de próteses dentárias, otimizando dados para modelos Difusores Generativos.</li>
+        <li>Arquitetei sistema RAG para +10.000 tickets (ChromaDB/Qdrant), aumentando a precisão da consulta em 42% (economia estimada ~200h/mês).</li>
+        <li>Implementei chatbot em produção (Ollama/Docker/Kubernetes) com APIs OpenAI/Claude/DeepSeek/LLaMA-2 e MLOps, reduzindo latência em 30% para +5k usuários.</li>
+        <li>Desenvolvi pipelines ETL para processamento de imagens de próteses dentárias, otimizando dados para modelos de difusão generativa.</li>
     </ul>
-    
-    <h3>Engenheiro de Visão Computacional - UFRN</h3>
-    <p><em>Jan 2023 - Dez 2023</em></p>
+
+    <h3><span class="job-title">Engenheiro de Visão Computacional</span> - UFRN</h3>
+    <p class="date">Jan 2023 - Dez 2023</p>
     <ul>
-        <li>Desenvolvi técnicas de compressão para modelos de detecção de defeitos em tecidos, alcançando 94% de redução no tamanho mantendo precisão.</li>
-        <li>Projetei sistema industrial de detecção de defeitos processando +10.000 imagens diárias usando PyTorch e CNNs otimizadas.</li>
-        <li>Implementei arquitetura de microsserviços com Docker e RabbitMQ, reduzindo significativamente tempo de inferência em produção.</li>
+        <li>Treinei detectores de defeitos em tecidos (YOLOv8, 98.2% de precisão) usando imagens de alta resolução de teares industriais.</li>
+        <li>Implementei arquitetura baseada em MQTT para comunicação eficiente entre dispositivos (+50) e servidores de IA, otimizando escalabilidade.</li>
+        <li>Colaborei na criação de solução robusta para processamento de imagens em tempo real para a indústria têxtil.</li>
     </ul>
-    
-    <h3>Analista de IA - TJRN</h3>
-    <p><em>Set 2022 - Out 2023</em></p>
+
+    <h3><span class="job-title">Analista de Inteligência Artificial</span> - TJRN</h3>
+    <p class="date">Set 2022 - Out 2023</p>
     <ul>
-        <li>Desenvolvi sistema RPA Concriz automatizando gestão de processos legais, reduzindo tempo de processamento manual em 85%.</li>
-        <li>Implementei ferramentas de análise de texto usando Transformers, alcançando +90% de precisão na classificação jurídica.</li>
-        <li>Criei framework de testes automatizados com Selenium para sistemas WEB Jurídicos.</li>
+        <li>Automatizei +15 fluxos de trabalho no PJe (software de tribunal brasileiro) com Selenium, economizando 25h/semana de trabalho manual.</li>
+        <li>Desenvolvi modelos de classificação de texto (PyTorch, +90% precisão) para categorização automática de documentos jurídicos.</li>
+        <li>Implementei modelos de previsão de séries temporais (Darts, Transformers/TFT) para análise de dados públicos/internos.</li>
+        <li>Criei aplicativos desktop para Windows (Qt) para ferramentas internas.</li>
     </ul>
-    
-    <h2>Formação Acadêmica</h2>
+
+    <h3><span class="job-title">Engenheiro de Machine Learning</span> - MPRN</h3>
+    <p class="date">Jan 2021 - Ago 2022</p>
     <ul>
-        <li><strong>Engenharia de Computação</strong> - UFRN (2024)</li>
-        <li><strong>Bacharelado em Ciências e Tecnologia</strong> - UFRN (2021)</li>
+        <li>Projetei 8 modelos de CV para detecção de materiais ilícitos (armas, documentos, nudez), acelerando investigações em 40%.</li>
+        <li>Implementei monitoramento (Grafana/Prometheus) e gerenciamento de dados (HDFS/Kafka/S3/Kerberos).</li>
+        <li>Desenvolvi pipelines de web scraping (Scrapy/Selenium).</li>
     </ul>
-    
-    <h2>Publicações e Pesquisa</h2>
+
+     <h3><span class="job-title">Estagiário de Machine Learning</span> - CPQD</h3>
+    <p class="date">Mar 2020 - Mar 2021</p>
     <ul>
-        <li><strong>TCC:</strong> "Plataforma automática para compressão consciente de modelos de aprendizagem profunda" - <a href="http://repositorio.ufm.br/handle/123456789/61722">Link</a></li>
-        <li><strong>SEMISH:</strong> "Vehicle Speed Detection and Safety Distance Estimation Using Aerial Images of Brazilian Highway" - <a href="https://sol.sbc.org.br/index.php/semish/article/view/11334">Link</a></li>
+        <li>Construí pipeline AWS SageMaker para classificação de texto médico (+50k registros, 92% F1-score); trabalhei com modelos de QA (NLP).</li>
     </ul>
-    
-    <h2>Habilidades</h2>
+
+    <h3><span class="job-title">Bolsista de Eng. de Machine Learning</span> - SmartMetropolis</h3>
+    <p class="date">Jan 2020 - Dez 2020</p>
     <ul>
-        <li><strong>Tecnologias:</strong> Python, PyTorch, Vector DBs (ChromaDB, QDrant), Docker, Git</li>
-        <li><strong>Domínios:</strong> Sistemas RAG, LLMs, Visão Computacional, NLP</li>
-        <li><strong>APIs de IA:</strong> OpenAI, Claude, DeepSeek, Grok</li>
-        <li><strong>Infraestrutura:</strong> MLOps, Kubernetes, Docker, Ollama</li>
+        <li>Desenvolvi sistemas de Detecção de Placas Veiculares e Reconhecimento Facial (TensorFlow).</li>
+        <li>Criei sistemas web utilizando Django e React.</li>
     </ul>
-    
-    <h2>Idiomas</h2>
-    <ul>
-        <li>Português (Nativo)</li>
-        <li>Inglês (Fluente)</li>
-    </ul>
+
+    <div class="two-column-section">
+        <div class="column">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li><strong>Engenharia de Computação</strong> - UFRN (Concluído 2024)</li>
+                 <ul><li>Pesquisa em IA (12 semestres/IC): LLMs, CV (VANTs/Industrial), Otimização de Cluster GPU (declarações disponíveis).</li></ul>
+                <li><strong>Bacharelado em Ciências e Tecnologia</strong> - UFRN (Concluído 2021)</li>
+            </ul>
+        </div>
+         <div class="column">
+            <h2>Publicações e Pesquisa</h2>
+            <ul>
+                <li><strong>SEMISH 2020:</strong> "Vehicle Speed Detection..." (Implementado em 3 cidades) - <a href="https://sol.sbc.org.br/index.php/semish/article/view/11334" target="_blank">Link</a></li>
+                <li><strong>GitHub:</strong> "ECT-proj-cnn-vant" (Framework open-source, +200 estrelas) - <a href="https://github.com/vitoryeso/ECT-proj-cnn-vant" target="_blank">Link</a></li>
+                 <li><strong>TCC:</strong> "Plataforma automática para compressão..." - <a href="http://repositorio.ufm.br/handle/123456789/61722" target="_blank">Link</a></li>
+           </ul>
+        </div>
+    </div>
+
+    <div class="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li><span class="section-title">Linguagens:</span> Python, SQL, JavaScript, Shell Script, C++, PL/SQL, CSS</li>
+            <li><span class="section-title">Frameworks:</span> PyTorch, TensorFlow, LangChain, Hugging Face, Scikit-learn, Pandas, NumPy, Selenium, Scrapy, Darts, Qt, Django, React</li>
+            <li><span class="section-title">IA/ML/Domínios:</span> LLMs (RAG, Agentes, Fine-tuning: LLaMA-2, GPTs), Visão Computacional (Detecção/Segmentação: YOLO, OpenCV), NLP (Classificação, QA, Transformers), MLOps, Séries Temporais (TFT), RPA</li>
+            <li><span class="section-title">Infra/Cloud/DBs:</span> Docker, Kubernetes, AWS (SageMaker, S3), GCP, Kafka, MQTT, RabbitMQ, HDFS, Vector DBs (ChromaDB, Qdrant), SQL DBs, Ollama, Git</li>
+            <li><span class="section-title">Monitoramento:</span> Grafana, Prometheus, MLflow, Power BI, Linux, Windows Dev, Jupyter, YAML, Kerberos</li>
+            <li><span class="section-title">Idiomas:</span> Português (Nativo), Inglês (Avançado – Negociação Técnica)</li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
